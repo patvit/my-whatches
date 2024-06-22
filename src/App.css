@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.form-input {
+  display: block;
+  margin: 0 24px 0 24px;
+  padding: 8px 16px;
+}
+
+.timeZone {
+  width: 150px;
+}
+
+.form-label {
+  margin-right: 8px;
+}
+
+.form-btn {
+  align-self: end;
+  padding: 8px 16px;
+}
+
+.list-watches {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.list-item {
+  margin-right: 54px;
+  margin-bottom: 16px;
+}
+
+.watch-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.watch-close {
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.watch-close:hover {
+  color: rgb(0, 0, 0);
+}
+
+.watch-body {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #00fff2;
+  border-radius: 50%;
+}
+
+.watch-center {
+  position: absolute;
+  top: calc(50px - 3px);
+  left: calc(50px - 3px);
+  width: 6px;
+  height: 6px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.watch-hour, .watch-minute, .watch-second {
+  position: absolute;
+  left: 50px;
+  width: 1px;
+  transform: rotate(0deg);
+  transform-origin: bottom;
+}
+
+.watch-hour {
+  top: 15px;
+  height: 35px;
+  background-color: #15ff00;
+}
+
+.watch-minute {
+  top: 5px;
+  height: 45px;
+  background-color: rgb(255, 0, 255);
+}
+
+.watch-second {
+  top: 0;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+}
